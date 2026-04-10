@@ -493,7 +493,7 @@ header.scrolled   .mobile-menu { color: #1e293b; }
     letter-spacing: 2px;
     color: #cbd5f5;
     margin-bottom: 2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* Timeline */
