@@ -1,60 +1,96 @@
-// ===== MOBILE NAV TOGGLE =====
-const mobileMenuBtn = document.querySelector('.mobile-menu');
-const navLinks = document.querySelector('.nav-links');
+/* =============================================================
+   ICDCN 2027 — script.js
+   Clean, consolidated JavaScript
+   ============================================================= */
 
-mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+(function () {
+    'use strict';
 
-// ===== DROPDOWN TOGGLE FOR MOBILE =====
-document.querySelectorAll('.dropdown-toggle').forEach(item => {
-    item.addEventListener('click', function (e) {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            this.parentElement.classList.toggle('open');
-        }
-    });
-});
+    // ===== MOBILE NAV TOGGLE =====
+    const mobileMenuBtn = document.querySelector('.mobile-menu');
+    const navLinks      = document.querySelector('.nav-links');
 
-// Enhanced scroll effect for transparent header (your existing code)
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-        header.classList.remove('transparent');
-    } else {
-        header.classList.remove('scrolled');
-        header.classList.add('transparent');
-    }
-});
-
-// Smooth scrolling for anchor links (updated to exclude dropdown links)
-document.querySelectorAll('a[href^="#"]:not(.dropdown-menu a)').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// Close dropdowns when clicking outside (optional enhancement)
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav-links')) {
-        document.querySelectorAll('.dropdown-menu').forEach(menu => {
-            menu.style.opacity = '0';
-            menu.style.visibility = 'hidden';
-            menu.style.transform = 'translateY(-10px)';
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
     }
-});
 
-// Hero animation on load (your existing code)
-window.addEventListener('load', () => {
-    document.querySelector('.hero-content').style.opacity = '1';
-});
+    // ===== MOBILE DROPDOWN TOGGLE =====
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                this.closest('.dropdown').classList.toggle('open');
+            }
+        });
+    });
+
+    // Close mobile nav when a final link (non-toggle) is clicked
+    document.querySelectorAll('.nav-links a:not(.dropdown-toggle)').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+
+    // ===== HEADER SCROLL STATE =====
+    const header = document.querySelector('header');
+
+    function updateHeader() {
+        if (!header) return;
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+            header.classList.remove('transparent');
+        } else {
+            header.classList.remove('scrolled');
+            header.classList.add('transparent');
+        }
+    }
+
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader(); // run once on load
+
+    // ===== SMOOTH SCROLLING for anchor links =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // ===== HERO FADE-IN =====
+    // CSS animation handles this via opacity + @keyframes fadeInUp.
+    // The JS fallback below ensures visibility even if the animation
+    // hasn't triggered (e.g. prefers-reduced-motion).
+    window.addEventListener('load', () => {
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent) {
+            heroContent.style.animationPlayState = 'running';
+        }
+    });
+
+    // ===== SWIPER GALLERY =====
+    if (typeof Swiper !== 'undefined') {
+        new Swiper('.gallerySwiper', {
+            loop: true,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                320:  { slidesPerView: 1 },
+                640:  { slidesPerView: 2 },
+                1024: { slidesPerView: 4 },
+            },
+        });
+    }
+
+})();
