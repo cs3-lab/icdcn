@@ -836,3 +836,18 @@ footer {
     .cta-buttons { flex-direction: column; align-items: center; }
     .btn { width: 100%; justify-content: center; }
 }
+
+/* ===== INNER PAGE HEADER (always white, never transparent) ===== */
+header.no-transparent {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+}
+
+header.no-transparent .logo-text       { color: #3b82f6; }
+header.no-transparent .logo-img        { filter: none; }
+header.no-transparent .nav-links > li > a  { color: #333; }
+header.no-transparent .nav-links > li > a:hover { color: #1e40af; }
+header.no-transparent .mobile-menu     { color: #1e293b; }
+header.no-transparent .dropdown-menu  { background: rgba(255, 255, 255, 0.98); }
+header.no-transparent .dropdown-menu a { color: #333 !important; }
