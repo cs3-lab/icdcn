@@ -198,8 +198,17 @@ header.scrolled .logo-container .logo-text {
     margin-bottom: 2.5rem;
     opacity: 0.9;
 }
-
-/* .cta-buttons {
+.isdcn a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+.location a{
+    color: white;
+    text-decoration: none;
+}
+.cta-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -240,7 +249,7 @@ header.scrolled .logo-container .logo-text {
     background: white;
     color: #1e40af;
     transform: translateY(-2px);
-} */
+}
 
 /* Sections */
 section {
@@ -1101,4 +1110,89 @@ header.scrolled .dropdown-menu a:hover {
     font-weight: 600;
     color: #fff;
     background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+}
+
+/* ===== MOBILE NAV FIX ===== */
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        padding: 1rem 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-links a {
+        padding: 1rem 2rem;
+        display: block;
+        color: #333 !important;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8fafc;
+        display: none;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: block;
+    }
+}
+
+/* ===== MOBILE MENU COLOR FIX ===== */
+@media (max-width: 768px) {
+
+    /* Mobile menu panel background */
+    .nav-links {
+        background: #ffffff !important;
+    }
+
+    /* Force dark text inside mobile menu */
+    .nav-links a {
+        color: #1e293b !important;
+    }
+
+    .nav-links a:hover {
+        color: #1e40af !important;
+    }
+
+    /* Dropdown items in mobile */
+    .dropdown-menu a {
+        color: #1e293b !important;
+        background: #f8fafc;
+    }
+
+    /* Hamburger icon color */
+    .mobile-menu {
+        color: #1e293b !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header.transparent .mobile-menu {
+        color: white !important;   /* visible on hero image */
+    }
+
+    header.scrolled .mobile-menu {
+        color: #1e293b !important; /* visible after scroll */
+    }
 }

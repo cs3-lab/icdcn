@@ -1,3 +1,21 @@
+// ===== MOBILE NAV TOGGLE =====
+const mobileMenuBtn = document.querySelector('.mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// ===== DROPDOWN TOGGLE FOR MOBILE =====
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.addEventListener('click', function (e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('open');
+        }
+    });
+});
+
 // Enhanced scroll effect for transparent header (your existing code)
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
