@@ -76,6 +76,34 @@
         }
     });
 
+    // ===== SCROLL TO TOP =====
+    const scrollBtn = document.querySelector('.scroll-top-btn');
+
+    if (scrollBtn) {
+        window.addEventListener('scroll', () => {
+            scrollBtn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+
+        scrollBtn.addEventListener('click', () => {
+            const startY   = window.scrollY;
+            const duration = 800; // ← change this to control speed (ms)
+            let startTime  = null;
+
+            function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const elapsed  = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                window.scrollTo(0, startY * (1 - easeOutCubic(progress)));
+                if (progress < 1) requestAnimationFrame(step);
+            }
+
+            requestAnimationFrame(step);
+        });
+    }
+
+
     // ===== SWIPER GALLERY =====
     if (typeof Swiper !== 'undefined') {
         new Swiper('.gallerySwiper', {

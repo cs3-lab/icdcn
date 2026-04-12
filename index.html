@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBBLGWR0MS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VBBLGWR0MS');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICDCN 2027 | National Institute of Technology Karnataka, Surathkal</title>
@@ -348,6 +357,20 @@
         </div>
     </section>
 
+    <section class="visitor-counter">
+        <div class="visitor-counter-inner">
+            <div class="visitor-counter-icon">
+            <i class="fas fa-users"></i>
+            </div>
+            <div class="visitor-counter-text">
+            <div class="visitor-counter-label"><span id="visitor-count"></span> Unique Visitors</div>
+            </div>
+        </div>
+    </section>
+
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-content">
@@ -356,8 +379,52 @@
     </footer>
 
     <!-- ===== SCRIPTS ===== -->
+     <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
+        import { getDatabase, ref, runTransaction, onValue } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyB_QwvuDwNbEW64ofEC8l4x2nKt9pa9Qcc",
+            authDomain: "icdcn-2027.firebaseapp.com",
+            databaseURL: "https://icdcn-2027-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "icdcn-2027",
+            storageBucket: "icdcn-2027.firebasestorage.app",
+            messagingSenderId: "1077180077056",
+            appId: "1:1077180077056:web:d428b097f0cd2e69f3f4e5"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        const visitorCountRef = ref(db, 'visitor_count');
+        const counterDisplay = document.getElementById('visitor-count');
+
+        // logic to prevent repeat counting
+        const storageKey = 'icdcn_visitor_id';
+        const hasBeenCounted = localStorage.getItem(storageKey);
+
+        if (!hasBeenCounted) {
+            console.log("New visitor detected. Incrementing database...");
+            runTransaction(visitorCountRef, (currentCount) => {
+                return (currentCount || 0) + 1;
+            }).then(() => {
+                localStorage.setItem(storageKey, 'true');
+                console.log("Visit recorded in localStorage.");
+            }).catch((err) => console.error("Firebase error:", err));
+        } else {
+            console.log("Returning visitor. Skipping increment.");
+        }
+
+        // Always fetch the current count to show on screen
+        onValue(visitorCountRef, (snapshot) => {
+            const count = snapshot.val();
+            if (counterDisplay) {
+                counterDisplay.innerText = count || 0;
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
 
 </body>
 </html>
