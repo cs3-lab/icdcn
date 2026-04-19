@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Editions | ICDCN 2027</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="scrolled no-transparent">
+        <nav>
+            <a href="index.html" class="logo-container">
+                <img src="images/logos/icdcn.png" alt="ICDCN 2027 Logo" class="logo-img">
+                <span class="logo-text">ICDCN 2027</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Submissions <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="submission/call-for-paper.html">Call for Paper</a></li>
+                        <li><a href="#">Call for Workshop</a></li>
+                        <li><a href="#">Call for Tutorial</a></li>
+                        <li><a href="#">Call for Posters and Demo</a></li>
+                        <li><a href="#">Call for Doctoral Symposium</a></li>
+                        <li><a href="#">Camera-ready Instructions</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Program <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Accepted Papers</a></li>
+                        <li><a href="#">Program Schedule</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Participate <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Registration</a></li>
+                        <li><a href="#">Venue &amp; Accommodation</a></li>
+                        <li><a href="#">Travel Grants</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Workshops</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="editions.html">Editions</a></li>
+            </ul>
+
+            <button class="mobile-menu" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="cfp-hero">
+        
+        <div class="cfp-hero-left">
+            <h1 class="cfp-hero-title">Previous Editions</h1>
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <a href="index.html">HOME</a>
+                <i class="fas fa-chevron-right"></i>
+                <span class="breadcrumb-current">PREVIOUS EDITIONS</span>
+                <span></span>
+            </nav>
+            <p class="cfp-hero-sub">
+                A legacy of 27 editions spanning distributed computing and networking research across the globe.
+            </p>
+        </div>
+
+        <div class="cfp-hero-image">
+            <div class="oval-frame">
+                <img src="images/beach.png" alt="NITK Lighthouse">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="cfp-main">
+        <div class="cfp-container editions-container">
+
+            <!-- Stats bar -->
+            <div class="editions-stats">
+                <div class="edition-stat">
+                    <span class="edition-stat-number">27</span>
+                    <span class="edition-stat-label">Editions</span>
+                </div>
+                <div class="edition-stat-divider"></div>
+                <div class="edition-stat">
+                    <span class="edition-stat-number">199X</span>
+                    <span class="edition-stat-label">Founded</span>
+                </div>
+                <div class="edition-stat-divider"></div>
+                <div class="edition-stat">
+                    <span class="edition-stat-number">3+</span>
+                    <span class="edition-stat-label">Countries Hosted</span>
+                </div>
+                <div class="edition-stat-divider"></div>
+                <div class="edition-stat">
+                    <span class="edition-stat-number">1000+</span>
+                    <span class="edition-stat-label">Papers Published</span>
+                </div>
+            </div>
+
+            <!-- Filter bar -->
+            <div class="editions-filter">
+                <button class="filter-btn active" data-filter="all">All Editions</button>
+                <button class="filter-btn" data-filter="2020s">2020s</button>
+                <button class="filter-btn" data-filter="2010s">2010s</button>
+                <button class="filter-btn" data-filter="2000s">2000s</button>
+                <button class="filter-btn" data-filter="1990s">1990s</button>
+            </div>
+
+            <!-- Editions grid -->
+            <div class="editions-grid" id="editionsGrid">
+
+                <!-- 2026 -->
+                <div class="edition-card" data-decade="2020s">
+                    <div class="edition-year-badge">2026</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2026</h3>
+                        <p class="edition-edition">27th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Nara, Japan</span>
+                            <span><i class="fas fa-calendar"></i> Jan 6-9, 2026</span>
+                        </div>
+                    </div>
+                    <a href="https://sites.google.com/view/icdcn2026/home" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2025 -->
+                <div class="edition-card" data-decade="2020s">
+                    <div class="edition-year-badge">2025</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2025</h3>
+                        <p class="edition-edition">26th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> IIT Hyderabad, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2025</span>
+                        </div>
+                    </div>
+                    <a href="https://cse.iith.ac.in/icdcn-2025/" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2024 -->
+                <div class="edition-card" data-decade="2020s">
+                    <div class="edition-year-badge">2024</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2024</h3>
+                        <p class="edition-edition">25th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> IIT Madras, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2024</span>
+                        </div>
+                    </div>
+                    <a href="https://www.cse.iitm.ac.in/~icdcn2024/" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2023 -->
+                <div class="edition-card" data-decade="2020s">
+                    <div class="edition-year-badge">2023</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2023</h3>
+                        <p class="edition-edition">24th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> IIT Kharagpur, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2023</span>
+                        </div>
+                    </div>
+                    <a href="https://cse.iitkgp.ac.in/conf/ICDCN23/" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2022 -->
+                <div class="edition-card" data-decade="2020s">
+                    <div class="edition-year-badge">2022</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2022</h3>
+                        <p class="edition-edition">23rd Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i>Delhi, India (Virtual Conference)</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2022</span>
+                        </div>
+                    </div>
+                    <a href="https://icdcn2022.iiitd.edu.in/index.html" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2021 -->
+                <div class="edition-card" data-decade="2020s">
+                    <div class="edition-year-badge">2021</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2021</h3>
+                        <p class="edition-edition">22nd Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Nara, Japan (Virtual Conference)</span>
+                            <span><i class="fas fa-calendar"></i> Jan 5-8, 2021</span>
+                        </div>
+                    </div>
+                    <a href="https://www.icdcn2021.net/" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2020 -->
+                <div class="edition-card" data-decade="2020s">
+                    <div class="edition-year-badge">2020</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2020</h3>
+                        <p class="edition-edition">21st Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kolkata, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2020</span>
+                        </div>
+                    </div>
+                    <a href="http://www.icdcn2020.rf.gd/index.html" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2019 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2019</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2019</h3>
+                        <p class="edition-edition">20th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> IISc, Bangalore, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2019</span>
+                        </div>
+                    </div>
+                    <a href="#" class="edition-link edition-link-disabled">
+                        Archive Only <i class="fas fa-archive"></i>
+                    </a>
+                </div>
+
+                <!-- 2018 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2018</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2018</h3>
+                        <p class="edition-edition">19th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> IIT (BHU), Varanasi, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2018</span>
+                        </div>
+                    </div>
+                    <a href="#" class="edition-link edition-link-disabled">
+                        Archive Only <i class="fas fa-archive"></i>
+                    </a>
+                </div>
+
+                <!-- 2017 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2017</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2017</h3>
+                        <p class="edition-edition">18th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> IDRBT, Hyderabad, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 5-7, 2017</span>
+                        </div>
+                    </div>
+                    <a href="#" class="edition-link edition-link-disabled">
+                        Archive Only <i class="fas fa-archive"></i>
+                    </a>
+                </div>
+
+                <!-- 2016 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2016</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2016</h3>
+                        <p class="edition-edition">17th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i>Singapore Management University and National University of Singapore, Singapore</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2016</span>
+                        </div>
+                    </div>
+                    <a href="http://ares.smu.edu.sg/icdcn16" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2015 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2015</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2015</h3>
+                        <p class="edition-edition">16th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> BITS Pilani, K K Birla Goa Campus, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 8-10, 2015</span>
+                        </div>
+                    </div>
+                    <a href="#" class="edition-link edition-link-disabled">
+                        Archive Only <i class="fas fa-archive"></i>
+                    </a>
+                </div>
+
+                <!-- 2014 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2014</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2014</h3>
+                        <p class="edition-edition">15th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Amrita University, Coimbatore, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 4-7, 2014</span>
+                        </div>
+                    </div>
+                    <a href="#" class="edition-link edition-link-disabled">
+                        Archive Only <i class="fas fa-archive"></i>
+                    </a>
+                </div>
+
+                <!-- 2013 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2013</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2013</h3>
+                        <p class="edition-edition">14th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> TIFR, Mumbai, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 3-6, 2013</span>
+                        </div>
+                    </div>
+                    <a href="#" class="edition-link edition-link-disabled">
+                        Archive Only <i class="fas fa-archive"></i>
+                    </a>
+                </div>
+
+                <!-- 2012 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2012</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2012</h3>
+                        <p class="edition-edition">13th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> The Hong Kong Polytechnic University, Hong Kong, China</span>
+                            <span><i class="fas fa-calendar"></i> Jan 3-6, 2012</span>
+                        </div>
+                    </div>
+                    <a href="http://icdcn2012.comp.polyu.edu.hk/" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2011 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2011</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2011</h3>
+                        <p class="edition-edition">12th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> IISC, Bangalore, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 2-5, 2011</span>
+                        </div>
+                    </div>
+                    <a href="#" class="edition-link edition-link-disabled">
+                        Archive Only <i class="fas fa-archive"></i>
+                    </a>
+                </div>
+
+                <!-- 2010 -->
+                <div class="edition-card" data-decade="2010s">
+                    <div class="edition-year-badge">2010</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2010</h3>
+                        <p class="edition-edition">11th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> University of Calcutta, Kolkata, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 3-6, 2010</span>
+                        </div>
+                    </div>
+                    <a href="https://www.cucse.org/ICDCN2010.htm" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2009 -->
+                <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2009</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2009</h3>
+                        <p class="edition-edition">10th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 3-6, 2009</span>
+                        </div>
+                    </div>
+                    <a href="http://www.springer.com/computer/communications/book/978-3-540-92294-0" target="_blank" rel="noopener" class="edition-link">
+                        Check Proceedings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2008 -->
+                <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2008</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2008</h3>
+                        <p class="edition-edition">9th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kolkata, India</span>
+                            <span><i class="fas fa-calendar"></i> Jan 5-8, 2008</span>
+                        </div>
+                    </div>
+                    <a href="http://www.springer.com/computer/communications/book/978-3-540-77443-3" target="_blank" rel="noopener" class="edition-link">
+                        Check Proceedings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2006 -->
+                <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2006</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 2006</h3>
+                        <p class="edition-edition">8th Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Guwahati, India</span>
+                            <span><i class="fas fa-calendar"></i> Dec 27-30, 2006</span>
+                        </div>
+                    </div>
+                    <a href="http://www.springer.com/computer/communications/book/978-3-540-68139-7" target="_blank" rel="noopener" class="edition-link">
+                        Check Proceedings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2005 -->
+                <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2005</div>
+                    <div class="edition-card-body">
+                        <h3>IWDC 2005</h3>
+                        <p class="edition-edition">7th Edition (Workshop)</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kharagpur, India</span>
+                            <span><i class="fas fa-calendar"></i> Dec 27-30, 2006</span>
+                        </div>
+                    </div>
+                    <a href="http://www.springer.com/computer/communications/book/978-3-540-30959-8" target="_blank" rel="noopener" class="edition-link">
+                        Check Proceedings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2004 -->
+                <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2004</div>
+                    <div class="edition-card-body">
+                        <h3>IWDC 2004</h3>
+                        <p class="edition-edition">6th Edition (Workshop)</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kolkata, India</span>
+                            <span><i class="fas fa-calendar"></i> Dec 27-30, 2004</span>
+                        </div>
+                    </div>
+                    <a href="http://www.springer.com/computer/communications/book/978-3-540-24076-1" target="_blank" rel="noopener" class="edition-link">
+                        Check Proceedings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2003 -->
+                <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2003</div>
+                    <div class="edition-card-body">
+                        <h3>IWDC 2003</h3>
+                        <p class="edition-edition">5th Edition (Workshop)</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kolkata, India</span>
+                            <span><i class="fas fa-calendar"></i> Dec 27-30, 2003</span>
+                        </div>
+                    </div>
+                    <a href="http://www.springer.com/computer/communications/book/978-3-540-20745-0" target="_blank" rel="noopener" class="edition-link">
+                        Check Proceedings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2002 -->
+                <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2002</div>
+                    <div class="edition-card-body">
+                        <h3>IWDC 2002</h3>
+                        <p class="edition-edition">4th Edition (Workshop)</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Calcutta, India</span>
+                            <span><i class="fas fa-calendar"></i> Dec 28-31, 2002</span>
+                        </div>
+                    </div>
+                    <a href="http://www.springer.com/computer/communications/book/978-3-540-00355-7" target="_blank" rel="noopener" class="edition-link">
+                        Check Proceedings <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 2001 -->
+                <!-- <div class="edition-card" data-decade="2000s">
+                    <div class="edition-year-badge">2001</div>
+                    <div class="edition-card-body">
+                        <h3>IWDC 2001</h3>
+                        <p class="edition-edition">3rd Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Calcutta, India</span>
+                            <span><i class="fas fa-calendar"></i> Dec 26–29, 2001</span>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <div class="edition-card" data-decade="1990s">
+                    <div class="edition-year-badge">1999</div>
+                    <div class="edition-card-body">
+                        <h3>ICDCN 1999</h3>
+                        <p class="edition-edition">2nd Edition</p>
+                        <div class="edition-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Calcutta, India</span>
+                            <span><i class="fas fa-calendar"></i> 1999</span>
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener" class="edition-link">
+                        Visit Website <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div> -->
+
+            </div>
+            <!-- end editions-grid -->
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2027 ISDCN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Decade filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards       = document.querySelectorAll('.edition-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    const show = filter === 'all' || card.dataset.decade === filter;
+                    card.style.display = show ? '' : 'none';
+                    if (show) {
+                        card.style.animation = 'none';
+                        card.offsetHeight;
+                        card.style.animation = 'editionFadeIn 0.35s ease-out both';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
