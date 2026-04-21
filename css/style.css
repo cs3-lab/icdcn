@@ -558,7 +558,7 @@ header.scrolled   .mobile-menu { color: #1e293b; }
     position: relative;
     padding: 6rem 8%;
     text-align: center;
-    background: url('../images/homepage/lhc.png') center / cover no-repeat;
+    background: url('../images/homepage/ocean.png') center / cover no-repeat;
     background-attachment: fixed;
     overflow: hidden;
 }
