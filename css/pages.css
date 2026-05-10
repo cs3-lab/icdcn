@@ -788,9 +788,27 @@ code {
         max-width: 100%;
         flex: 1 1 100%;
     }
+    .org-tabs {
+        flex-direction: column;
+        border-bottom: none;
+        gap: 0.5rem;
+        margin-bottom: 1.75rem;
+    }
     .org-tab-btn {
-        padding: 0.65rem 0.85rem;
-        font-size: 0.82rem;
+        width: 100%;
+        border: 1.5px solid #e5e7eb;
+        border-bottom: 1.5px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        font-size: 0.88rem;
+        margin-bottom: 0;
+        justify-content: flex-start;
+        background: #f9fafb;
+    }
+    .org-tab-btn.active {
+        background: #eff6ff;
+        border-color: #93c5fd;
+        color: #1e40af;
     }
 }
 
