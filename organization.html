@@ -92,528 +92,702 @@
     <main class="cfp-main">
         <div class="cfp-container org-container">
  
-            <!-- General Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-star"></i>
-                    <h2>General Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/gopal.webp" alt="Gopal Pandurangan" onerror="this.style.display='none'">
+            <!-- ===== TAB BAR ===== -->
+            <div class="org-tabs" role="tablist">
+                <button class="org-tab-btn active" role="tab" aria-selected="true" aria-controls="tab-organising" data-tab="organising">
+                    <i class="fas fa-users-cog"></i> Organising Committee
+                </button>
+                <button class="org-tab-btn" role="tab" aria-selected="false" aria-controls="tab-steering" data-tab="steering">
+                    <i class="fas fa-chess-king"></i> Steering Committee
+                </button>
+                <button class="org-tab-btn" role="tab" aria-selected="false" aria-controls="tab-advisory" data-tab="advisory">
+                    <i class="fas fa-user-tie"></i> Advisory Committee
+                </button>
+            </div>
+ 
+            <!-- ===== TAB: ORGANISING ===== -->
+            <div class="org-tab-panel active" id="tab-organising" role="tabpanel">
+                <!-- General Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-star"></i>
+                        <h2>General Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/gopal.webp" alt="Gopal Pandurangan" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Gopal Pandurangan</h4>
+                                <p>University of Houston, USA.</p>
+                                <a href="https://www.uh.edu/nsm/computer-science/people/faculty/profiles/gopalpandurangan.php" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Gopal Pandurangan</h4>
-                            <p>University of Houston, USA.</p>
-                            <a href="https://www.uh.edu/nsm/computer-science/people/faculty/profiles/gopalpandurangan.php" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/yogesh-simmhan.webp" alt="Yogesh Simmhan" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Yogesh Simmhan</h4>
+                                <p>IISc Bangalore, India.</p>
+                                <a href="https://cds.iisc.ac.in/faculty/simmhan/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/yogesh-simmhan.webp" alt="Yogesh Simmhan" onerror="this.style.display='none'">
+                </div>
+ 
+                <!-- General Vice Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-star-half-alt"></i>
+                        <h2>General Vice Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/sourav-kanti-addya.webp" alt="Sourav Kanti Addya" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Sourav Kanti Addya</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://souravkaddya.in" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Yogesh Simmhan</h4>
-                            <p>IISc Bangalore, India.</p>
-                            <a href="https://cds.iisc.ac.in/faculty/simmhan/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+    
+                <!-- TPC Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-users-cog"></i>
+                        <h2>TPC Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/salil-kanhere.webp" alt="Salil Kanhere" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Salil Kanhere</h4>
+                                <p>UNSW Australia.</p>
+                                <a href="https://www.unsw.edu.au/staff/salil-kanhere" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/yuval-emek.webp" alt="Yuval Emek" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Yuval Emek</h4>
+                                <p>Technion, Israel Institute of Technology, Haifa, Israel.</p>
+                                <a href="https://dds.technion.ac.il/people/academic-staff/yuval-emek/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Workshop Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h2>Workshop Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/hirozumi-yamaguchi.webp" alt="Hirozumi Yamaguchi" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Hirozumi Yamaguchi</h4>
+                                <p>Osaka University, Japan.</p>
+                                <a href="https://mc.net.ist.osaka-u.ac.jp/people/h-yamagu/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/mukulika-maity.webp" alt="Mukulika Maity" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Mukulika Maity</h4>
+                                <p>IIT Madras, India.</p>
+                                <a href="https://www.cse.iitm.ac.in/~mukulika/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Doctoral Symposium Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h2>Doctoral Symposium Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/soumyajit-chatterjee.webp" alt="Soumyajit Chatterjee" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Soumyajit Chatterjee</h4>
+                                <p>Brave Software, UK.</p>
+                                <a href="https://www.linkedin.com/in/soumyajit-chatterjee-899885b8/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Demo Session Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h2>Demo Session Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/suchetana-chakraborty.webp" alt="Suchetana Chakraborty" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Suchetana Chakraborty</h4>
+                                <p>IIT Jodhpur, India.</p>
+                                <a href="https://www.iitj.ac.in/People/Profile/e5d3b945-8bb0-4334-95b2-06bfd99c7444" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Keynote Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-microphone"></i>
+                        <h2>Keynote Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/simone-silvestri.webp" alt="Simone Silvestri" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Simone Silvestri</h4>
+                                <p>University of Kentucky, USA.</p>
+                                <a href="https://silvestri.engr.uky.edu" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tutorial Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-book-reader"></i>
+                        <h2>Tutorial Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/fabien-dufoulon.webp" alt="Fabien Dufoulon" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Fabien Dufoulon</h4>
+                                <p>Lancaster University, UK.</p>
+                                <a href="https://www.lancaster.ac.uk/scc/about-us/people/fabien-dufoulon" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/sougata-sen.webp" alt="Sougata Sen" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Sougata Sen</h4>
+                                <p>BITS Goa, India.</p>
+                                <a href="https://www.bits-pilani.ac.in/goa/sougata-sen/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Panel Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-comments"></i>
+                        <h2>Panel Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/prasant-misra.webp" alt="Prasant Misra" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Prasant Misra</h4>
+                                <p>TCS Research, India.</p>
+                                <a href="https://sites.google.com/site/prasantmisra/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/john-augustine.webp" alt="John Augustine" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>John Augustine</h4>
+                                <p>IIT Madras, India.</p>
+                                <a href="https://www.cse.iitm.ac.in/~augustine/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Poster Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-image"></i>
+                        <h2>Poster Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/mohit-tahiliani.webp" alt="Mohit P. Tahiliani" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Mohit P. Tahiliani</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://cse.nitk.ac.in/faculty/mohit-p-tahiliani" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/ajay-pratap.webp" alt="Ajay Pratap" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Ajay Pratap</h4>
+                                <p>IIT(BHU) Varanasi, India.</p>
+                                <a href="https://www.iitbhu.ac.in/dept/cse/people/ajaycse" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Registration Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-id-card"></i>
+                        <h2>Registration Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/jothi-ramalingam.webp" alt="Jothi Ramalingam" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Jothi Ramalingam</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://macs.nitk.ac.in/faculty/jothi-ramalingam" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Sponsorship Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-handshake"></i>
+                        <h2>Sponsorship Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/dilip-dalei.webp" alt="Dilip Dalei" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Dilip Dalei</h4>
+                                <p>DRDO, India.</p>
+                                <a href="https://in.linkedin.com/in/dilipkumardalei" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/br-chandavarkar.webp" alt="B. R. Chandavarkar" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>B. R. Chandavarkar</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://cse.nitk.ac.in/faculty/b-r-chandravarkar" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Publication Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-book"></i>
+                        <h2>Publication Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/bishakh-chandra-ghosh.webp" alt="Bishakh Chandra Ghosh" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Bishakh Chandra Ghosh</h4>
+                                <p>Pinngy</p>
+                                <a href="https://ghoshbishakh.github.io" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/anurag-satpathy.webp" alt="Anurag Satpathy" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Anurag Satpathy</h4>
+                                <p>MS&amp;T, USA.</p>
+                                <a href="https://anuragsatpathy.github.io" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Finance Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-coins"></i>
+                        <h2>Finance Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/punyasha-chatterjee.webp" alt="Punyasha Chatterjee" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Punyasha Chatterjee</h4>
+                                <p>Jadavpur University, India. (ISDCN Treasurer)</p>
+                                <a href="https://jadavpuruniversity.in/faculty-profile/punyasha-chatterjee/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/abhilash-mh.png" alt="Abhilash M H" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Abhilash M H</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://cse.nitk.ac.in/faculty/abhilash-m-h" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Local Organizing Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2>Local Organizing Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/pushparaj-shetty-d.webp" alt="Pushparaj Shetty D" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Pushparaj Shetty D</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://macs.nitk.ac.in/faculty/pushparaj-shetty-d" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/soumya-hegde.webp" alt="Soumya Hegde" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Soumya Hegde</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://cse.nitk.ac.in/faculty/saumya-hegde" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Publicity Co-Chairs -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-bullhorn"></i>
+                        <h2>Publicity Co-Chairs</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/eirini-tsiropoulou.webp" alt="Eirini Eleni Tsiropoulou" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Eirini Eleni Tsiropoulou</h4>
+                                <p>Arizona State University, USA.</p>
+                                <a href="https://search.asu.edu/profile/5136552" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/anusha-vangala.webp" alt="Anusha Vangala" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Anusha Vangala</h4>
+                                <p>NIT Warangal, India.</p>
+                                <a href="https://erp.nitw.ac.in/ext/profile/cs-anusha_vangala" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-members" style="padding-top: 1em;">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/duong-nguyen.webp" alt="Duong Nguyen" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Duong Nguyen</h4>
+                                <p>University of Wyoming, USA.</p>
+                                <a href="https://search.asu.edu/profile/3714024" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/chamara-kattadige.webp" alt="Chamara Manoj Madarasingha Kattadige" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Chamara Manoj Madarasingha Kattadige</h4>
+                                <p>Curtin University, Australia.</p>
+                                <a href="https://staffportal.curtin.edu.au/staff/profile/view/chamara-manoj-madarasingha-kattadige-da9333f2/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Student Travel Grant Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-passport"></i>
+                        <h2>Student Travel Grant Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/jidesh-p.webp" alt="Jidesh P" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Jidesh P</h4>
+                                <p>NITK Surathkal, India.</p>
+                                <a href="https://macs.nitk.ac.in/faculty/jidesh-p" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/nirnay-ghosh.webp" alt="Nirnay Ghosh" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Nirnay Ghosh</h4>
+                                <p>IIEST Shibpur, India.</p>
+                                <a href="https://www.iiests.ac.in/IIEST/Faculty/cs-nirnay" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Social Media Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <h2>Social Media Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/arindam-khanda.webp" alt="Arindam Khanda" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Arindam Khanda</h4>
+                                <p>MS&amp;T, USA.</p>
+                                <a href="https://www.linkedin.com/in/arindam-khanda-b3753164" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Web Chair -->
+                <div class="org-group">
+                    <div class="org-group-header">
+                        <i class="fas fa-globe"></i>
+                        <h2>Web Chair</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/prasanna-kumar.webp" alt="Prasanna Kumar" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Prasanna Kumar</h4>
+                                <p>Deloitte USI</p>
+                                <a href="https://prasanna-kumar-26.github.io/resume/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
  
-            <!-- General Vice Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-star-half-alt"></i>
-                    <h2>General Vice Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/sourav-kanti-addya.webp" alt="Sourav Kanti Addya" onerror="this.style.display='none'">
+            <!-- ===== TAB: STEERING ===== -->
+            <div class="org-tab-panel" id="tab-steering" role="tabpanel">
+                <!-- Steering Committee Members -->
+                <div class="org-group" style="border-bottom: none; margin-bottom: 0;">
+                    <div class="org-group-header">
+                        <i class="fas fa-chess-king"></i>
+                        <h2>ICDCN Steering Committee</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/paolo-bellavista.webp" alt="Paolo Bellavista" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Paolo Bellavista</h4>
+                                <p>University of Bologna, Italy.</p>
+                                <a href="https://www.unibo.it/sitoweb/paolo.bellavista/en" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Sourav Kanti Addya</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://souravkaddya.in" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/sandip-chakraborty.webp" alt="Sandip Chakraborty" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Sandip Chakraborty</h4>
+                                <p>IIT Kharagpur, India.</p>
+                                <a href="https://sandipc-iitkgp.github.io/sandip-web/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-members" style="padding-top: 0.75rem;">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/sajal-das.webp" alt="Sajal K. Das" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Sajal K. Das</h4>
+                                <p>Missouri University of Science and Technology, USA.</p>
+                                <span style="display:inline-block; font-size:0.7rem; font-weight:600; color:#1e40af; background:#dbeafe; border-radius:4px; padding:1px 7px; margin-bottom:0.25rem;">Chair</span><br>
+                                <a href="https://isc.mst.edu/people/ri/sdas/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/vijay-garg.webp" alt="Vijay Garg" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Vijay Garg</h4>
+                                <p>University of Texas at Austin, USA.</p>
+                                <a href="https://ece.utexas.edu/people/faculty/vijay-garg" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-members" style="padding-top: 0.75rem;">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/valerie-king.webp" alt="Valerie King" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Valerie King</h4>
+                                <p>University of Victoria, Canada.</p>
+                                <a href="https://webhome.cs.uvic.ca/~val/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/sriram-pemmaraju.webp" alt="Sriram V. Pemmaraju" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Sriram V. Pemmaraju</h4>
+                                <p>University of Iowa, USA.</p>
+                                <a href="https://cs.uiowa.edu/people/sriram-pemmaraju" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-members" style="padding-top: 0.75rem;">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/roger-wattenhofer.webp" alt="Roger Wattenhofer" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Roger Wattenhofer</h4>
+                                <p>ETH Zurich, Switzerland.</p>
+                                <a href="https://disco.ethz.ch/members/wroger" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
  
-            <!-- TPC Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-users-cog"></i>
-                    <h2>TPC Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/salil-kanhere.webp" alt="Salil Kanhere" onerror="this.style.display='none'">
+            <!-- ===== TAB: ADVISORY ===== -->
+            <div class="org-tab-panel" id="tab-advisory" role="tabpanel">
+                <!-- Advisory Committee Members -->
+                <div class="org-group" style="border-bottom: none; margin-bottom: 0;">
+                    <div class="org-group-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h2>ICDCN Advisory Committee</h2>
+                    </div>
+                    <div class="org-members">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/sukumar-ghosh.webp" alt="Sukumar Ghosh" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Sukumar Ghosh</h4>
+                                <p>University of Iowa, USA.</p>
+                                <span style="display:inline-block; font-size:0.7rem; font-weight:600; color:#1e40af; background:#dbeafe; border-radius:4px; padding:1px 7px; margin-bottom:0.25rem;">Chair</span><br>
+                                <a href="https://cs.uiowa.edu/people/sukumar-ghosh" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Salil Kanhere</h4>
-                            <p>UNSW Australia.</p>
-                            <a href="https://www.unsw.edu.au/staff/salil-kanhere" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/dilip-krishnaswamy.webp" alt="Dilip Krishnaswamy" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Dilip Krishnaswamy</h4>
+                                <p>Reliance Jio Platforms, Bangalore, India.</p>
+                                <a href="https://sites.google.com/site/dilip1/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/yuval-emek.webp" alt="Yuval Emek" onerror="this.style.display='none'">
+                    <div class="org-members" style="padding-top: 0.75rem;">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/david-peleg.webp" alt="David Peleg" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>David Peleg</h4>
+                                <p>Weizmann Institute of Science, Israel.</p>
+                                <a href="https://www.weizmann.ac.il/math/peleg/home" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
-                        <div>
-                            <h4>Yuval Emek</h4>
-                            <p>Technion, Israel Institute of Technology, Haifa, Israel.</p>
-                            <a href="https://dds.technion.ac.il/people/academic-staff/yuval-emek/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Workshop Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h2>Workshop Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/hirozumi-yamaguchi.webp" alt="Hirozumi Yamaguchi" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Hirozumi Yamaguchi</h4>
-                            <p>Osaka University, Japan.</p>
-                            <a href="https://mc.net.ist.osaka-u.ac.jp/people/h-yamagu/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/michel-raynal.webp" alt="Michel Raynal" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Michel Raynal</h4>
+                                <p>IRISA, France.</p>
+                                <a href="https://team.inria.fr/wide/team/michel-raynal/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/mukulika-maity.webp" alt="Mukulika Maity" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Mukulika Maity</h4>
-                            <p>IIT Madras, India.</p>
-                            <a href="https://www.cse.iitm.ac.in/~mukulika/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Doctoral Symposium Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h2>Doctoral Symposium Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/soumyajit-chatterjee.webp" alt="Soumyajit Chatterjee" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Soumyajit Chatterjee</h4>
-                            <p>Brave Software, UK.</p>
-                            <a href="https://www.linkedin.com/in/soumyajit-chatterjee-899885b8/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                    <div class="org-members" style="padding-top: 0.75rem;">
+                        <div class="org-card">
+                            <div class="org-avatar">
+                                <img src="images/committee/rk-shyamasundar.webp" alt="Rudrapatna K. Shyamasundar" onerror="this.style.display='none'">
+                            </div>
+                            <div>
+                                <h4>Rudrapatna K. Shyamasundar</h4>
+                                <p>IIT Bombay, India.</p>
+                                <a href="https://www.cse.iitb.ac.in/~rkss/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
- 
-            <!-- Demo Session Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-laptop-code"></i>
-                    <h2>Demo Session Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/suchetana-chakraborty.webp" alt="Suchetana Chakraborty" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Suchetana Chakraborty</h4>
-                            <p>IIT Jodhpur, India.</p>
-                            <a href="https://www.iitj.ac.in/People/Profile/e5d3b945-8bb0-4334-95b2-06bfd99c7444" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Keynote Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-microphone"></i>
-                    <h2>Keynote Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/simone-silvestri.webp" alt="Simone Silvestri" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Simone Silvestri</h4>
-                            <p>University of Kentucky, USA.</p>
-                            <a href="https://silvestri.engr.uky.edu" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Tutorial Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-book-reader"></i>
-                    <h2>Tutorial Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/fabien-dufoulon.webp" alt="Fabien Dufoulon" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Fabien Dufoulon</h4>
-                            <p>Lancaster University, UK.</p>
-                            <a href="https://www.lancaster.ac.uk/scc/about-us/people/fabien-dufoulon" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/sougata-sen.webp" alt="Sougata Sen" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Sougata Sen</h4>
-                            <p>BITS Goa, India.</p>
-                            <a href="https://www.bits-pilani.ac.in/goa/sougata-sen/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Panel Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-comments"></i>
-                    <h2>Panel Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/prasant-misra.webp" alt="Prasant Misra" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Prasant Misra</h4>
-                            <p>TCS Research, India.</p>
-                            <a href="https://sites.google.com/site/prasantmisra/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/john-augustine.webp" alt="John Augustine" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>John Augustine</h4>
-                            <p>IIT Madras, India.</p>
-                            <a href="https://www.cse.iitm.ac.in/~augustine/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Poster Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-image"></i>
-                    <h2>Poster Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/mohit-tahiliani.webp" alt="Mohit P. Tahiliani" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Mohit P. Tahiliani</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://cse.nitk.ac.in/faculty/mohit-p-tahiliani" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/ajay-pratap.webp" alt="Ajay Pratap" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Ajay Pratap</h4>
-                            <p>IIT(BHU) Varanasi, India.</p>
-                            <a href="https://www.iitbhu.ac.in/dept/cse/people/ajaycse" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Registration Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-id-card"></i>
-                    <h2>Registration Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/jothi-ramalingam.webp" alt="Jothi Ramalingam" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Jothi Ramalingam</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://macs.nitk.ac.in/faculty/jothi-ramalingam" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Sponsorship Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-handshake"></i>
-                    <h2>Sponsorship Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/dilip-dalei.webp" alt="Dilip Dalai" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Dilip Dalei</h4>
-                            <p>DRDO, India.</p>
-                            <a href="https://in.linkedin.com/in/dilipkumardalei" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/br-chandavarkar.webp" alt="B. R. Chandavarkar" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>B. R. Chandavarkar</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://cse.nitk.ac.in/faculty/b-r-chandravarkar" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Publication Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-book"></i>
-                    <h2>Publication Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/bishakh-chandra-ghosh.webp" alt="Bishakh Chandra Ghosh" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Bishakh Chandra Ghosh</h4>
-                            <p>Pinngy</p>
-                            <a href="https://ghoshbishakh.github.io" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/anurag-satpathy.webp" alt="Anurag Satpathy" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Anurag Satpathy</h4>
-                            <p>MS&amp;T, USA.</p>
-                            <a href="https://anuragsatpathy.github.io" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Finance Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-coins"></i>
-                    <h2>Finance Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/punyasha-chatterjee.webp" alt="Punyasha Chatterjee" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Punyasha Chatterjee</h4>
-                            <p>Jadavpur University, India. (ISDCN Treasurer)</p>
-                            <a href="https://jadavpuruniversity.in/faculty-profile/punyasha-chatterjee/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/abhilash-mh.png" alt="Abhilash M H" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Abhilash M H</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://cse.nitk.ac.in/faculty/abhilash-m-h" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Local Organizing Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h2>Local Organizing Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/pushparaj-shetty-d.webp" alt="Pushparaj Shetty D" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Pushparaj Shetty D</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://macs.nitk.ac.in/faculty/pushparaj-shetty-d" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/soumya-hegde.webp" alt="Soumya Hegde" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Soumya Hegde</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://cse.nitk.ac.in/faculty/saumya-hegde" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Publicity Co-Chairs -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-bullhorn"></i>
-                    <h2>Publicity Co-Chairs</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/eirini-tsiropoulou.webp" alt="Eirini Eleni Tsiropoulu" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Eirini Eleni Tsiropoulou</h4>
-                            <p>Arizona State University, USA.</p>
-                            <a href="https://search.asu.edu/profile/5136552" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/anusha-vangala.webp" alt="Anusha Vangala" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Anusha Vangala</h4>
-                            <p>NIT Warangal, India.</p>
-                            <a href="https://erp.nitw.ac.in/ext/profile/cs-anusha_vangala" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="org-members" style="padding-top: 1em;">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/duong-nguyen.webp" alt="Duong Nguyen" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Duong Nguyen</h4>
-                            <p>University of Wyoming, USA.</p>
-                            <a href="https://search.asu.edu/profile/3714024" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/chamara-kattadige.webp" alt="Chamara Manoj Madarasingha Kattadige" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Chamara Manoj Madarasingha Kattadige</h4>
-                            <p>Curtin University, Australia.</p>
-                            <a href="https://staffportal.curtin.edu.au/staff/profile/view/chamara-manoj-madarasingha-kattadige-da9333f2/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Student Travel Grant Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-passport"></i>
-                    <h2>Student Travel Grant Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/jidesh-p.webp" alt="Jidesh P" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Jidesh P</h4>
-                            <p>NITK Surathkal, India.</p>
-                            <a href="https://macs.nitk.ac.in/faculty/jidesh-p" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/nirnay-ghosh.webp" alt="Nirnay Ghosh" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Nirnay Ghosh</h4>
-                            <p>IIEST Shibpur, India.</p>
-                            <a href="https://www.iiests.ac.in/IIEST/Faculty/cs-nirnay" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Social Media Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fa-solid fa-share-nodes"></i>
-                    <h2>Social Media Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/arindam-khanda.webp" alt="Arindam Khanda" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Arindam Khanda</h4>
-                            <p>MS&amp;T, USA.</p>
-                            <a href="https://www.linkedin.com/in/arindam-khanda-b3753164" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Web Chair -->
-            <div class="org-group">
-                <div class="org-group-header">
-                    <i class="fas fa-globe"></i>
-                    <h2>Web Chair</h2>
-                </div>
-                <div class="org-members">
-                    <div class="org-card">
-                        <div class="org-avatar">
-                            <img src="images/committee/prasanna-kumar.webp" alt="Prasanna Kumar" onerror="this.style.display='none'">
-                        </div>
-                        <div>
-                            <h4>Prasanna Kumar</h4>
-                            <p>Deloitte USI</p>
-                            <a href="https://prasanna-kumar-26.github.io/resume/" target="_blank" rel="noopener" class="org-website">Website <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
+
         </div>
     </main>
 
@@ -673,5 +847,21 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Tab switching
+        document.querySelectorAll('.org-tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.tab;
+                document.querySelectorAll('.org-tab-btn').forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                document.querySelectorAll('.org-tab-panel').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+                document.getElementById('tab-' + target).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
