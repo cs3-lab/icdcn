@@ -444,6 +444,103 @@
     .cfp-section h2 { font-size: 1.4rem; }
 }
 
+/* ===== JOURNAL CALLOUT ===== */
+.journal-callout {
+    border: 1px solid #bfdbfe;
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 1.25rem 0;
+}
+
+.journal-callout-header {
+    background: #dbeafe;
+    padding: 0.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.journal-callout-header i {
+    font-size: 0.75rem;
+    color: #1e40af;
+}
+
+.journal-callout-header span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #1e40af;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.journal-callout-body {
+    background: #fff;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.journal-callout-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 10px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e40af;
+    font-size: 1.1rem;
+}
+
+.journal-callout-text { flex: 1; }
+
+.journal-callout-text p {
+    font-size: 0.925rem;
+    color: #1e293b;
+    line-height: 1.65;
+    margin: 0 0 0.5rem;
+}
+
+.journal-callout-text a {
+    color: #1e40af;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #bfdbfe;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.journal-callout-text a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+}
+
+.journal-callout-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 0.2rem 0.75rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.journal-callout-badge i {
+    font-size: 0.7rem;
+    color: #9ca3af;
+}
+
+@media (max-width: 480px) {
+    .journal-callout-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 /* ===== PROCEEDINGS — external links list ===== */
 .info-links {
     display: flex;
