@@ -2015,3 +2015,197 @@ code {
     .alacarte-grid     { grid-template-columns: repeat(2, 1fr); }
 }
  
+
+/* =============================================================
+   CALL FOR WORKSHOP PAGE
+   ============================================================= */
+ 
+/* ===== DEADLINE BANNER ===== */
+.deadline-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background: linear-gradient(135deg, #1e40af, #1d4ed8);
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    color: #fff;
+}
+ 
+.deadline-banner > i {
+    font-size: 1.5rem;
+    opacity: 0.85;
+    flex-shrink: 0;
+}
+ 
+.deadline-banner > div {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+ 
+.deadline-banner strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+ 
+.deadline-banner span {
+    font-size: 0.82rem;
+    opacity: 0.8;
+}
+ 
+.deadline-banner .btn {
+    flex-shrink: 0;
+    background: #fff;
+    color: #1e40af;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.875rem;
+}
+ 
+.deadline-banner .btn:hover {
+    background: #f0f4ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+ 
+/* ===== PROPOSAL CHECKLIST ===== */
+.proposal-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 1.25rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+ 
+.proposal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.1rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background 0.2s ease;
+}
+ 
+.proposal-item:last-child { border-bottom: none; }
+.proposal-item:hover { background: #f8fafc; }
+ 
+.proposal-num {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #1e40af;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+    letter-spacing: 0.03em;
+}
+ 
+.proposal-item h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+ 
+.proposal-item p {
+    font-size: 0.85rem;
+    color: #4b5563;
+    line-height: 1.65;
+    margin: 0;
+}
+ 
+/* ===== SUBMISSION STEPS ===== */
+.submission-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+ 
+.submission-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+}
+ 
+.step-num {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    background: #1e40af;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+ 
+.submission-step p {
+    font-size: 0.88rem;
+    color: #374151;
+    line-height: 1.65;
+    margin: 0;
+}
+ 
+.submission-step a {
+    color: #1e40af;
+    text-decoration: none;
+    border-bottom: 1px solid #bfdbfe;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+ 
+.submission-step a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+}
+ 
+/* ===== ORG EMAIL LINK ===== */
+.org-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    color: #1e40af;
+    text-decoration: none;
+    margin-top: 0.35rem;
+    transition: color 0.2s ease;
+}
+ 
+.org-email i { font-size: 0.65rem; }
+.org-email:hover { color: #1d4ed8; text-decoration: underline; }
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .deadline-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    .deadline-banner .btn {
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    .proposal-item { gap: 0.85rem; }
+}
+ 
