@@ -207,49 +207,179 @@
             </div>
 
             <!-- Important Dates card -->
-            <div class="dates-card">
-                <h3 class="dates-title">📋 IMPORTANT DATES (All the deadlines are in AoE)</h3>
-                <div class="timeline">
+            <!-- Important Dates card -->
+<div class="dates-card">
+    <h3 class="dates-title">📋 IMPORTANT DATES</h3>
 
-                    <div class="timeline-item">
-                        <div class="dot"></div>
-                        <div>
-                            <span class="date">July 30, 2026</span>
-                            <h4>Paper Submission</h4>
-                            <p>Register &amp; submit your paper</p>
-                        </div>
+    <!-- Tab track -->
+    <div class="dates-tab-track">
+        <button class="dates-tab-btn active" data-tab="main">
+            <i class="fas fa-file-alt"></i> Main Conference
+        </button>
+        <button class="dates-tab-btn" data-tab="workshop">
+            <i class="fas fa-users"></i> Workshop
+        </button>
+        <button class="dates-tab-btn" data-tab="doctoral">
+            <i class="fas fa-graduation-cap"></i> Doctoral Symposium
+        </button>
+        <button class="dates-tab-btn" data-tab="poster">
+            <i class="fas fa-image"></i> Posters &amp; Demo
+        </button>
+    </div>
+
+    <!-- Main Conference -->
+    <div class="dates-panel active" id="dates-main">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="dot"></div>
+                    <div>
+                        <span class="date">July 30, 2026</span>
+                        <h4>Paper Submission</h4>
+                        <p>Register &amp; submit your paper</p>
                     </div>
-
-                    <div class="timeline-item">
-                        <div class="dot"></div>
-                        <div>
-                            <span class="date">October 1, 2026</span>
-                            <h4>Acceptance Notifications</h4>
-                            <p>Release of selected papers</p>
-                        </div>
-                    </div>
-
-
-                    <div class="timeline-item">
-                        <div class="dot"></div>
-                        <div>
-                            <span class="date">October 29, 2026</span>
-                            <h4>Camera-Ready Due</h4>
-                            <p>Final version submission</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="dot"></div>
-                        <div>
-                            <span class="date">January 4-7, 2027</span>
-                            <h4>Conference Dates</h4>
-                            <p>Final event date</p>
-                        </div>
-                    </div>
-
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">October 1, 2026</span>
+                    <h4>Acceptance Notifications</h4>
+                    <p>Release of selected papers</p>
                 </div>
             </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">October 29, 2026</span>
+                    <h4>Camera-Ready Due</h4>
+                    <p>Final version submission</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">January 4-7, 2027</span>
+                    <h4>Conference Dates</h4>
+                    <p>Final event date</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workshop -->
+    <div class="dates-panel" id="dates-workshop">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">JUNE 20, 2026</span>
+                    <h4>Workshop Proposal Deadline</h4>
+                    <p>Submit via EasyChair (PDF)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">JUNE 30, 2026</span>
+                    <h4>Proposal Acceptance Notification</h4>
+                    <p>Decision communicated to organizers</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">SEPTEMBER 1, 2026</span>
+                    <h4>Workshop Paper Submission</h4>
+                    <p>Papers submitted to respective workshops</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">OCTOBER 15, 2026</span>
+                    <h4>Paper Acceptance Notification</h4>
+                    <p>Reviews returned to authors</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">OCTOBER 29, 2026</span>
+                    <h4>Camera-Ready Due</h4>
+                    <p>Final version submission</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">January 4-7, 2027</span>
+                    <h4>Conference Dates</h4>
+                    <p>Final event date</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Doctoral Symposium -->
+    <div class="dates-panel" id="dates-doctoral">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">TBD</span>
+                    <h4>Paper Submission Deadline</h4>
+                    <p>Details to be announced</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">TBD</span>
+                    <h4>Acceptance Notification</h4>
+                    <p>Details to be announced</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">TBD</span>
+                    <h4>Camera-Ready Due</h4>
+                    <p>Details to be announced</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Posters & Demo -->
+    <div class="dates-panel" id="dates-poster">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">TBD</span>
+                    <h4>Submission Deadline</h4>
+                    <p>Details to be announced</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">TBD</span>
+                    <h4>Acceptance Notification</h4>
+                    <p>Details to be announced</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div>
+                    <span class="date">TBD</span>
+                    <h4>Camera-Ready Due</h4>
+                    <p>Details to be announced</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
         </div>
     </section>

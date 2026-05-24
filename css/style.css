@@ -595,7 +595,62 @@ header.scrolled   .mobile-menu { color: #1e293b; }
     font-size: 0.88rem;
     color: #cbd5e1;
 }
+/* ===== DATES CARD — TABBED ===== */
+.dates-tab-track {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 3px;
+    gap: 2px;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
+.dates-tab-track::-webkit-scrollbar { display: none; }
+
+.dates-tab-btn {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dates-tab-btn i { font-size: 0.65rem; }
+
+.dates-tab-btn:hover { color: rgba(255, 255, 255, 0.85); }
+
+.dates-tab-btn.active {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+    font-weight: 600;
+}
+
+.dates-panel { display: none; }
+.dates-panel.active { display: block; }
+
+@media (max-width: 480px) {
+    .dates-tab-btn {
+        font-size: 0.65rem;
+        padding: 5px 6px;
+        gap: 3px;
+    }
+
+    .dates-tab-btn i { display: none; }
+}
 /* ===== KEYNOTE SPEAKERS ===== */
 .keynote-section {
     position: relative;

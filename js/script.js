@@ -120,5 +120,15 @@
             },
         });
     }
+    // ===== IMPORTANT DATES TABS =====
+    document.querySelectorAll('.dates-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+        document.querySelectorAll('.dates-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.dates-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('dates-' + tab).classList.add('active');
+    });
+});
 
 })();
