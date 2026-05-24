@@ -129,7 +129,7 @@
 }
 
 /* ===== CFP DOWNLOAD ===== */
-.cfp-download {
+.download-pdf {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,20 +143,20 @@
     flex-wrap: wrap;
 }
 
-.cfp-download h3 {
+.download-pdf h3 {
     font-size: 1rem;
     font-weight: 600;
     color: #1e3a8a;
     margin: 0 0 0.2rem;
 }
 
-.cfp-download p {
+.download-pdf p {
     font-size: 0.85rem;
     color: #4b5563;
     margin: 0;
 }
 
-.cfp-download a {
+.download-pdf a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -172,26 +172,26 @@
     transition: all 0.25s ease;
 }
 
-.cfp-download a::before {
+.download-pdf a::before {
     content: "\f019";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     font-size: 0.8rem;
 }
 
-.cfp-download a:hover {
+.download-pdf a:hover {
     background: #1d4ed8;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(30, 64, 175, 0.25);
 }
 
 @media (max-width: 600px) {
-    .cfp-download {
+    .download-pdf {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .cfp-download a {
+    .download-pdf a {
         width: 100%;
         justify-content: center;
     }
@@ -1875,7 +1875,7 @@ code {
 /* ===== A LA CARTE ===== */
 .alacarte-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-top: 1.25rem;
 }
