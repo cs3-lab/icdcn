@@ -338,8 +338,8 @@ header.scrolled   .mobile-menu { color: #1e293b; }
 }
 
 .sponsor-logo {
-    max-width: 130px;
-    max-height: 60px;
+    max-width: 170px;
+    max-height: 100px;
     object-fit: contain;
 }
 
