@@ -371,6 +371,15 @@
 
 .date-value i { font-size: 0.8rem; opacity: 0.7; }
 
+/*===== CFP SUBHEADING (within a section) ===== */
+.cfp-subheading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0.75rem 0 0.75rem;
+    padding-top: 0.5rem;
+}
+
 /* CTA block */
 .cfp-cta {
     text-align: center;
