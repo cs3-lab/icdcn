@@ -2650,3 +2650,265 @@ code {
     .visa-apply-btn,
     .visa-contact-btn { width: 100%; justify-content: center; }
 }
+
+/* =============================================================
+   CALL FOR DOCTORAL SYMPOSIUM PAGE
+   ============================================================= */
+
+/* ===== WHAT TO EXPECT HIGHLIGHTS ===== */
+.ds-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.ds-highlight-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.4rem 1.1rem;
+    text-align: center;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.ds-highlight-card:hover {
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.09);
+    border-color: #bfdbfe;
+    transform: translateY(-3px);
+}
+
+.ds-highlight-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 auto 0.9rem;
+}
+
+.ds-highlight-card h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.4rem;
+}
+
+.ds-highlight-card p {
+    font-size: 0.8rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== SUBMISSION GRID ===== */
+.ds-submission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.ds-submission-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ds-submission-card:hover {
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.08);
+    border-color: #bfdbfe;
+}
+
+.ds-submission-num {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    line-height: 1;
+}
+
+.ds-submission-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.ds-submission-card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.ds-submission-card > p {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Checklist inside submission card */
+.ds-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.ds-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: #374151;
+}
+
+.ds-checklist li i {
+    font-size: 0.65rem;
+    color: #16a34a;
+    flex-shrink: 0;
+    width: 12px;
+}
+
+/* Submit note below the grid */
+.ds-submit-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #1e40af;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.ds-submit-note i {
+    color: #1e40af;
+    font-size: 0.95rem;
+    margin-top: 0.15rem;
+    flex-shrink: 0;
+}
+
+.ds-submit-note p {
+    font-size: 0.875rem;
+    color: #1e3a8a;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===== SYMPOSIUM DETAILS LIST ===== */
+.ds-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 1.25rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.ds-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.4rem;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background 0.15s ease;
+}
+
+.ds-detail-item:last-child { border-bottom: none; }
+.ds-detail-item:hover { background: #f8fafc; }
+
+.ds-detail-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 9px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e40af;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.ds-detail-item h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+.ds-detail-item p {
+    font-size: 0.85rem;
+    color: #4b5563;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ===== AoE NOTE ===== */
+.ds-aoe-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: #6b7280;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 0.3rem 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.ds-aoe-note i { color: #1e40af; font-size: 0.75rem; }
+
+/* ===== FORMATTING LINKS ===== */
+.guidelines-list a {
+    color: #1e40af;
+    text-decoration: none;
+    border-bottom: 1px solid #bfdbfe;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.guidelines-list a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .ds-highlights { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+    .ds-submission-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .ds-highlights { grid-template-columns: 1fr 1fr; }
+    .ds-highlight-card { padding: 1.1rem 0.9rem; }
+}
