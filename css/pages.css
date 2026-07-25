@@ -3577,3 +3577,357 @@ code {
     .reg-instruction-num { display: none; }
     .reg-instruction-item { padding: 1rem; }
 }
+
+/* =============================================================
+   ACCOMMODATION PAGE
+   ============================================================= */
+ 
+.accom-container { max-width: 1000px; }
+ 
+/* ===== ON-CAMPUS CARD ===== */
+.accom-oncampus-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 1.25rem;
+}
+ 
+.accom-oncampus-left {
+    background: linear-gradient(160deg, #1e40af, #1d4ed8);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.75rem;
+}
+ 
+.accom-campus-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
+ 
+.accom-oncampus-left h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+ 
+.accom-oncampus-left p {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.5;
+    margin: 0;
+}
+ 
+.accom-oncampus-right {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+ 
+.accom-oncampus-perks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+ 
+.accom-perk {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.855rem;
+    color: #374151;
+}
+ 
+.accom-perk i {
+    color: #16a34a;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+ 
+.accom-oncampus-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.45rem;
+    font-size: 0.78rem;
+    color: #92400e;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
+    line-height: 1.5;
+}
+ 
+.accom-oncampus-note i {
+    color: #d97706;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+ 
+/* Shared book button */
+.accom-book-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    width: fit-content;
+}
+ 
+.accom-book-btn.primary {
+    background: #1e40af;
+    color: #fff;
+    border: none;
+}
+ 
+.accom-book-btn.primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(30,64,175,0.3);
+}
+ 
+.accom-book-btn.secondary {
+    background: #f8fafc;
+    color: #1e40af;
+    border: 1px solid #bfdbfe;
+}
+ 
+.accom-book-btn.secondary:hover {
+    background: #eff6ff;
+    transform: translateY(-1px);
+}
+ 
+/* ===== HOTELS GRID ===== */
+.accom-hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+ 
+.accom-hotel-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+ 
+.accom-hotel-card:hover {
+    box-shadow: 0 6px 24px rgba(30,64,175,0.1);
+    border-color: #bfdbfe;
+    transform: translateY(-3px);
+}
+ 
+.accom-hotel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.1rem 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+ 
+.accom-hotel-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 9px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e40af;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+ 
+.accom-hotel-header > div { flex: 1; min-width: 0; }
+ 
+.accom-hotel-header h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 0.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ 
+.accom-hotel-distance {
+    font-size: 0.72rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+ 
+.accom-hotel-distance i { font-size: 0.6rem; color: #1e40af; }
+ 
+.accom-hotel-tag {
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+ 
+.budget-tag  { background: #dcfce7; color: #15803d; }
+.premium-tag { background: #fef3c7; color: #92400e; }
+ 
+.accom-hotel-body {
+    padding: 0.85rem 1.1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+ 
+.accom-hotel-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+ 
+.accom-hotel-info span {
+    font-size: 0.78rem;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+ 
+.accom-hotel-info i { font-size: 0.65rem; color: #1e40af; width: 10px; }
+ 
+.accom-hotel-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+ 
+.accom-hotel-amenities span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.68rem;
+    color: #6b7280;
+    background: #f1f5f9;
+    border-radius: 50px;
+    padding: 0.2rem 0.55rem;
+}
+ 
+.accom-hotel-amenities i { font-size: 0.6rem; }
+ 
+.accom-hotel-card > .accom-book-btn {
+    margin: 0 1.1rem 1rem;
+    justify-content: center;
+}
+ 
+/* Disclaimer */
+.accom-hotels-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+ 
+.accom-hotels-disclaimer i { color: #d1d5db; flex-shrink: 0; margin-top: 0.1rem; }
+ 
+/* ===== TRANSPORT GRID ===== */
+.accom-transport-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+ 
+.accom-transport-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+ 
+.accom-transport-item:hover {
+    box-shadow: 0 4px 16px rgba(30,64,175,0.08);
+    border-color: #bfdbfe;
+}
+ 
+.accom-transport-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 auto 0.85rem;
+}
+ 
+.accom-transport-item h4 {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.4rem;
+}
+ 
+.accom-transport-item p {
+    font-size: 0.78rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .accom-hotels-grid    { grid-template-columns: repeat(2, 1fr); }
+    .accom-transport-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 768px) {
+    .accom-oncampus-card {
+        grid-template-columns: 1fr;
+    }
+ 
+    .accom-oncampus-left {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 1.25rem;
+    }
+}
+ 
+@media (max-width: 540px) {
+    .accom-hotels-grid    { grid-template-columns: 1fr; }
+    .accom-transport-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
