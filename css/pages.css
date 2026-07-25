@@ -3931,3 +3931,93 @@ code {
     .accom-transport-grid { grid-template-columns: repeat(2, 1fr); }
 }
  
+/* =============================================================
+   CALL FOR TUTORIAL — PAST TUTORIALS LIST
+   ============================================================= */
+ 
+.tutorial-past-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 1.25rem;
+}
+ 
+.tutorial-year-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+ 
+.tutorial-year-group:last-child { border-bottom: none; }
+ 
+.tutorial-year-badge {
+    min-width: 72px;
+    padding: 1rem;
+    background: #1e40af;
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    align-self: stretch;
+    flex-shrink: 0;
+}
+ 
+/* Alternate year badge shading */
+.tutorial-year-group:nth-child(even) .tutorial-year-badge {
+    background: #1d4ed8;
+}
+ 
+.tutorial-year-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+}
+ 
+.tutorial-past-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.55rem 1.25rem;
+    font-size: 0.855rem;
+    color: #374151;
+    line-height: 1.55;
+    transition: background 0.15s ease;
+}
+ 
+.tutorial-past-item:hover { background: #f8fafc; }
+ 
+.tutorial-past-item i {
+    font-size: 0.4rem;
+    color: #1e40af;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+}
+ 
+/* Reuse topics-grid with 4 cols for tutorial topics */
+.topics-grid.four-col {
+    grid-template-columns: repeat(4, 1fr);
+}
+ 
+@media (max-width: 900px) {
+    .tutorial-year-badge { min-width: 56px; font-size: 0.75rem; }
+}
+ 
+@media (max-width: 600px) {
+    .tutorial-year-badge {
+        min-width: 48px;
+        font-size: 0.7rem;
+        padding: 0.75rem 0.5rem;
+    }
+ 
+    .tutorial-past-item { padding: 0.5rem 0.85rem; font-size: 0.82rem; }
+}
+ 
