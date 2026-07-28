@@ -140,5 +140,40 @@
         }, { passive: true });
     }
 });
+    // ===== DATES TAB SCROLL + ARROW BUTTONS =====
+    const tabWrapper   = document.querySelector('.dates-tab-wrapper');
+    const tabTrack     = document.querySelector('.dates-tab-track');
+    const arrowLeft    = document.querySelector('.dates-tab-arrow-left');
+    const arrowRight   = document.querySelector('.dates-tab-arrow-right');
+    const scrollHint   = document.querySelector('.dates-tab-scroll-hint');
+    const scrollAmount = 120;
+
+    function updateArrows() {
+        if (!tabTrack) return;
+        const atStart = tabTrack.scrollLeft <= 2;
+        const atEnd   = tabTrack.scrollLeft + tabTrack.clientWidth >= tabTrack.scrollWidth - 4;
+
+        if (arrowLeft)  arrowLeft.classList.toggle('hidden', atStart);
+        if (arrowRight) arrowRight.classList.toggle('hidden', atEnd);
+        if (scrollHint) scrollHint.style.display = atEnd ? 'none' : 'flex';
+        if (tabWrapper) tabWrapper.classList.toggle('scrolled-end', atEnd);
+    }
+
+    if (arrowLeft) {
+        arrowLeft.addEventListener('click', () => {
+            tabTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+    }
+
+    if (arrowRight) {
+        arrowRight.addEventListener('click', () => {
+            tabTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    }
+
+    if (tabTrack) {
+        tabTrack.addEventListener('scroll', updateArrows, { passive: true });
+        updateArrows(); // run once on load to set initial state
+    }
 
 })();

@@ -1333,3 +1333,36 @@ header.no-transparent .dropdown-menu a { color: #333 !important; }
 .dates-tab-wrapper.scrolled-end .dates-tab-scroll-hint {
     display: none;
 }
+
+/* ===== DATES TAB ARROW BUTTONS ===== */
+.dates-tab-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 4;
+    transition: background 0.2s ease, opacity 0.2s ease;
+    padding: 0;
+}
+
+.dates-tab-arrow:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.dates-tab-arrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dates-tab-arrow-left  { left: 4px; }
+.dates-tab-arrow-right { right: 4px; }
