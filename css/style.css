@@ -1284,3 +1284,52 @@ header.no-transparent .nav-links > li > a:hover { color: #1e40af; }
 header.no-transparent .mobile-menu     { color: #1e293b; }
 header.no-transparent .dropdown-menu  { background: rgba(255, 255, 255, 0.98); }
 header.no-transparent .dropdown-menu a { color: #333 !important; }
+
+/* ===== DATES TAB TRACK — SCROLL HINT ===== */
+.dates-tab-wrapper {
+    position: relative;
+}
+
+.dates-tab-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(15, 30, 100, 0.85));
+    border-radius: 0 8px 8px 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.dates-tab-wrapper.scrolled-end::after {
+    opacity: 0;
+}
+
+.dates-tab-scroll-hint {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.65rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    pointer-events: none;
+    z-index: 3;
+    animation: nudge 1.5s ease-in-out infinite;
+}
+
+.dates-tab-scroll-hint i { font-size: 0.7rem; }
+
+@keyframes nudge {
+    0%, 100% { transform: translateY(-50%) translateX(0); }
+    50%       { transform: translateY(-50%) translateX(4px); }
+}
+
+.dates-tab-wrapper.scrolled-end .dates-tab-scroll-hint {
+    display: none;
+}

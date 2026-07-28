@@ -129,6 +129,16 @@
         btn.classList.add('active');
         document.getElementById('dates-' + tab).classList.add('active');
     });
+    // ===== DATES TAB SCROLL HINT =====
+    const tabWrapper = document.querySelector('.dates-tab-wrapper');
+    const tabTrack   = document.querySelector('.dates-tab-track');
+
+    if (tabTrack && tabWrapper) {
+        tabTrack.addEventListener('scroll', () => {
+            const atEnd = tabTrack.scrollLeft + tabTrack.clientWidth >= tabTrack.scrollWidth - 4;
+            tabWrapper.classList.toggle('scrolled-end', atEnd);
+        }, { passive: true });
+    }
 });
 
 })();
