@@ -1366,3 +1366,59 @@ header.no-transparent .dropdown-menu a { color: #333 !important; }
 
 .dates-tab-arrow-left  { left: 4px; }
 .dates-tab-arrow-right { right: 4px; }
+
+/* ===== EXTENDED DEADLINE STYLING ===== */
+.date-extended-badge {
+    display: inline-block;
+    background: #facc15;
+    color: #1e293b;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin: 0 0.3rem;
+    vertical-align: middle;
+}
+
+/* Timeline card (index.html) */
+.date s {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: line-through;
+    font-size: 0.68rem;
+}
+
+.date-new {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    color: #facc15;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+/* Dates table (call-for-paper.html) */
+.date-value-extended {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+.date-old s {
+    font-size: 0.78rem;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.date-value-new {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+.date-value-new i { font-size: 0.8rem; }
