@@ -4111,3 +4111,49 @@ code {
 .acm-apc-waiver a:hover {
     color: #1d4ed8 !important;
 }
+
+/* ===== REGISTRATION — APC NOTE ===== */
+.reg-apc-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: #fff5f5;
+    border: 1px solid #fca5a5;
+    border-left: 4px solid #dc2626;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #450a0a;
+    line-height: 1.7;
+}
+
+.reg-apc-note i.fa-circle-info {
+    color: #dc2626;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.reg-apc-note p { margin: 0; }
+
+.reg-apc-note a {
+    color: #b91c1c;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #fca5a5;
+    margin-left: 0.25rem;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.reg-apc-note a i {
+    font-size: 0.65rem;
+    margin-left: 0.2rem;
+    vertical-align: middle;
+}
+
+.reg-apc-note a:hover {
+    color: #991b1b;
+    border-bottom-color: #991b1b;
+}
