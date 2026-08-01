@@ -4021,3 +4021,93 @@ code {
     .tutorial-past-item { padding: 0.5rem 0.85rem; font-size: 0.82rem; }
 }
  
+/* ===== ACM APC WARNING BOX ===== */
+.acm-apc-box {
+    border: 1px solid #fca5a5;
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 1.25rem 0;
+}
+
+.acm-apc-box-header {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: #dc2626;
+    padding: 0.85rem 1.4rem;
+    color: #fff;
+}
+
+.acm-apc-box-header i    { font-size: 1rem; flex-shrink: 0; }
+.acm-apc-box-header span { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.03em; }
+
+.acm-apc-box-body {
+    background: #fff5f5;
+    padding: 1.25rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.acm-apc-box-body p {
+    font-size: 0.875rem;
+    color: #450a0a;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.acm-apc-box-body a {
+    color: #b91c1c;
+    text-decoration: none;
+}
+
+.acm-apc-box-body a:hover {
+    color: #991b1b;
+}
+
+/* Info links inside the box */
+.acm-apc-links a {
+    color: #b91c1c !important;
+}
+
+.acm-apc-links a:hover {
+    color: #991b1b !important;
+    text-decoration: none;
+}
+
+/* Waiver callout */
+.acm-apc-waiver {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    background: #fff;
+    border: 1px solid #fca5a5;
+    border-left: 4px solid #16a34a;
+    border-radius: 8px;
+    padding: 0.9rem 1.1rem;
+    margin-top: 0.25rem;
+}
+
+.acm-apc-waiver i {
+    color: #16a34a;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.acm-apc-waiver p {
+    font-size: 0.875rem;
+    color: #374151 !important;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.acm-apc-waiver strong { color: #111827; }
+
+.acm-apc-waiver a {
+    color: #1e40af !important;
+}
+
+.acm-apc-waiver a:hover {
+    color: #1d4ed8 !important;
+}
