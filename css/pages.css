@@ -4157,3 +4157,188 @@ code {
     color: #991b1b;
     border-bottom-color: #991b1b;
 }
+
+/* =============================================================
+   WORKSHOP SUBMISSION INSTRUCTIONS PAGE
+   ============================================================= */
+ 
+/* ===== WORKSHOP SUBMIT LINKS ===== */
+.ws-submit-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 1.25rem;
+}
+ 
+.ws-submit-link {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem 1.4rem;
+    text-decoration: none;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background 0.2s ease;
+}
+ 
+.ws-submit-link:last-child { border-bottom: none; }
+ 
+.ws-submit-link:hover {
+    background: #f0f6ff;
+}
+ 
+.ws-submit-link:hover .ws-submit-acronym {
+    background: #1d4ed8;
+}
+ 
+.ws-submit-acronym {
+    min-width: 80px;
+    padding: 0.45rem 0.75rem;
+    background: #1e40af;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+ 
+.ws-submit-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1;
+}
+ 
+.ws-submit-text span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827;
+    line-height: 1.4;
+}
+ 
+.ws-submit-text small {
+    font-size: 0.75rem;
+    color: #1e40af;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+ 
+.ws-submit-text small i {
+    font-size: 0.65rem;
+    transition: transform 0.2s ease;
+}
+ 
+.ws-submit-link:hover small i { transform: translateX(3px); }
+ 
+/* ===== REGISTRATION RULES ===== */
+.ws-reg-rules {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+ 
+.ws-reg-rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.1rem 1.4rem;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+ 
+.ws-reg-rule-item:hover {
+    box-shadow: 0 4px 16px rgba(30,64,175,0.07);
+    border-color: #bfdbfe;
+}
+ 
+.ws-reg-rule-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+ 
+.ws-reg-rule-icon.oneday { background: linear-gradient(135deg, #065f46, #059669); }
+.ws-reg-rule-icon.full   { background: linear-gradient(135deg, #1e40af, #3b82f6); }
+ 
+.ws-reg-rule-body h4 {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.3rem;
+}
+ 
+.ws-reg-rule-body p {
+    font-size: 0.865rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin: 0;
+}
+ 
+/* Read more note */
+.ws-reg-readmore {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 0.8rem 1.1rem;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #1e3a8a;
+}
+ 
+.ws-reg-readmore i {
+    color: #1e40af;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+ 
+.ws-reg-readmore p { margin: 0; }
+ 
+.ws-reg-readmore a {
+    color: #1e40af;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #bfdbfe;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+ 
+.ws-reg-readmore a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+}
+ 
+/* ===== INTRO LINKS ===== */
+.cfp-intro a {
+    color: #1e40af;
+    text-decoration: none;
+    border-bottom: 1px solid #bfdbfe;
+    transition: color 0.2s ease;
+}
+ 
+.cfp-intro a:hover { color: #1d4ed8; }
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .ws-submit-link { gap: 0.85rem; padding: 0.9rem 1rem; }
+    .ws-submit-acronym { min-width: 66px; font-size: 0.72rem; }
+    .ws-reg-rule-item { padding: 0.9rem 1rem; }
+}
+ 
