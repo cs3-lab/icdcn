@@ -4342,3 +4342,171 @@ code {
     .ws-reg-rule-item { padding: 0.9rem 1rem; }
 }
  
+/* ===== OFFICIAL PARTNER HOTEL CARD ===== */
+.accom-partner-card {
+    border: 2px solid #1e40af;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 1.25rem;
+    box-shadow: 0 8px 30px rgba(30, 64, 175, 0.12);
+}
+ 
+.accom-partner-badge {
+    background: linear-gradient(135deg, #1e40af, #1d4ed8);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.5rem 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+ 
+.accom-partner-badge i { color: #facc15; font-size: 0.8rem; }
+ 
+.accom-partner-body {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    background: #fff;
+}
+ 
+.accom-partner-left {
+    background: linear-gradient(160deg, #1e40af, #1d4ed8);
+    padding: 2rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.6rem;
+}
+ 
+.accom-partner-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
+ 
+.accom-partner-left h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+ 
+.accom-partner-left p {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.5;
+    margin: 0;
+}
+ 
+.accom-partner-distance {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.15);
+    border-radius: 50px;
+    padding: 0.2rem 0.65rem;
+}
+ 
+.accom-partner-distance i { font-size: 0.6rem; }
+ 
+.accom-partner-right {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+ 
+/* Rate box */
+.accom-partner-rate {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+}
+ 
+.accom-partner-rate-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #15803d;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+}
+ 
+.accom-partner-rate-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #15803d;
+    line-height: 1.2;
+}
+ 
+.accom-partner-rate-price span {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #4b5563;
+}
+ 
+.accom-partner-rate-note {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    color: #16a34a;
+    margin-top: 0.35rem;
+}
+ 
+.accom-partner-rate-note i { font-size: 0.7rem; }
+ 
+/* Perks */
+.accom-partner-perks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem;
+}
+ 
+/* Actions */
+.accom-partner-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .accom-partner-body {
+        grid-template-columns: 1fr;
+    }
+ 
+    .accom-partner-left {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 1.1rem 1.4rem;
+    }
+ 
+    .accom-partner-perks {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .accom-partner-actions .accom-book-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+ 
