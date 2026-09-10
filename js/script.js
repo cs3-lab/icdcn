@@ -175,5 +175,12 @@
         tabTrack.addEventListener('scroll', updateArrows, { passive: true });
         updateArrows(); // run once on load to set initial state
     }
-
+// ===== KEYNOTE PHOTO LOAD DETECTION =====
+document.querySelectorAll('.keynote-card-photo img').forEach(img => {
+    if (img.complete && img.naturalWidth > 0) {
+        img.classList.add('loaded');
+    } else {
+        img.addEventListener('load', () => img.classList.add('loaded'));
+    }
+});
 })();
