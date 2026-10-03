@@ -5078,3 +5078,110 @@ code {
     .cr-step-body        { padding-left: 0; }
     .cr-step-checklist   { grid-template-columns: 1fr; }
 }
+
+/* =============================================================
+   TRAVEL GRANTS PAGE
+   ============================================================= */
+
+/* ===== ELIGIBILITY GRID ===== */
+.tg-eligibility-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.tg-eligible {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.tg-elig-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.25rem;
+    color: #fff;
+}
+
+.tg-elig-header.eligible   { background: linear-gradient(135deg, #065f46, #059669); }
+.tg-elig-header.ineligible { background: linear-gradient(135deg, #991b1b, #dc2626); }
+
+.tg-elig-header i  { font-size: 1rem; }
+.tg-elig-header h4 { font-size: 0.92rem; font-weight: 600; margin: 0; }
+
+.tg-elig-list {
+    list-style: none;
+    padding: 1rem 1.25rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    background: #fff;
+}
+
+.tg-elig-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.845rem;
+    color: #374151;
+    line-height: 1.55;
+}
+
+.tg-elig-list li i {
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.tg-eligible:first-child .tg-elig-list li i { color: #16a34a; }
+.tg-eligible:last-child  .tg-elig-list li i { color: #dc2626; }
+
+/* ===== IMPORTANT NOTES LIST ===== */
+.tg-notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 1.25rem;
+}
+
+.tg-note-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.85rem 1.4rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.875rem;
+    color: #374151;
+    line-height: 1.65;
+    transition: background 0.15s ease;
+}
+
+.tg-note-item:last-child { border-bottom: none; }
+.tg-note-item:hover      { background: #f8fafc; }
+
+.tg-note-num {
+    min-width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
+    font-size: 0.72rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+    .tg-eligibility-grid { grid-template-columns: 1fr; }
+}
