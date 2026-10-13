@@ -4640,7 +4640,18 @@ code {
     margin: 0;
     line-height: 1.25;
 }
- 
+.keynote-chair {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1e40af;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 50px;
+    padding: 0.2rem 0.75rem;
+    display: inline-block;
+    margin: 0.3rem 0 0;
+    line-height: 1.5;
+}
 /* Affiliation */
 .keynote-affil {
     display: flex;
@@ -4692,7 +4703,7 @@ code {
 .keynote-bio-label {
     font-size: 0.72rem;
     font-weight: 600;
-    color: #6b7280;
+    color: #111827;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin-bottom: 0.4rem;
