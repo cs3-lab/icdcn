@@ -5516,7 +5516,7 @@ code {
 }
 
 .ap-col-num     { width: 44px; text-align: center; }
-.ap-col-title   { min-width: 300px; }
+.ap-col-title   { min-width: 400px; }
 .ap-col-authors { min-width: 200px; }
 
 .ap-table tbody tr {
