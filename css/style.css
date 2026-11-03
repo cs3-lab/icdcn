@@ -698,6 +698,16 @@ header.scrolled   .mobile-menu { color: #1e293b; }
     gap: 4rem;
 }
 
+.banquet-speakers-grid {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+}
+
 .speaker-card { text-align: center; }
 
 .img-wrap {
@@ -739,7 +749,18 @@ header.scrolled   .mobile-menu { color: #1e293b; }
     color: #e5e7eb;
     line-height: 1.6;
 }
+.banquet-speaker-card h3 {
+    margin-top: 1.6rem;
+    font-size: 1.25rem;
+    color: #fff;
+}
 
+.banquet-speaker-card p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
 /* ===== SPONSORS ===== */
 .sponsors-section {
     padding: 5rem 2rem 6rem;
