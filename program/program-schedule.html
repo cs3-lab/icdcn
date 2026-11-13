@@ -11,16 +11,21 @@
 </head>
 <body>
 
+    <!-- ===== HEADER ===== -->
     <header class="scrolled no-transparent">
         <nav>
             <a href="../index.html" class="logo-container">
                 <img src="../images/logos/icdcn.png" alt="ICDCN 2027 Logo" class="logo-img">
                 <span class="logo-text">ICDCN 2027</span>
             </a>
+
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
+
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Submissions <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle">
+                        Submissions <i class="fas fa-chevron-down"></i>
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a href="../submission/call-for-paper.html">Call for Paper</a></li>
                         <li><a href="../submission/call-for-workshop.html">Call for Workshop Proposal</a></li>
@@ -32,22 +37,41 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle active-link">Program <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle active-link">
+                        Program <i class="fas fa-chevron-down"></i>
+                    </a>
                     <ul class="dropdown-menu">
-                        <li><a href="schedule.html" class="active-link">Program Schedule</a></li>
                         <li><a href="keynote.html">Keynote Speakers</a></li>
                         <li><a href="accepted-paper.html">Accepted Papers</a></li>
+                        <li><a href="program-schedule.html" class="active-link">Program Schedule</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Workshops <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle">
+                        Workshops <i class="fas fa-chevron-down"></i>
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a href="../workshops.html">List of Workshops</a></li>
                         <li><a href="../workshop-submission-instruction.html">Workshops Submission Instructions</a></li>
                     </ul>
                 </li>
+
+                <!-- <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Program <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Accepted Papers</a></li>
+                        <li><a href="#">Program Schedule</a></li>
+                    </ul>
+                </li> -->
+
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Participate <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="dropdown-toggle">
+                        Participate <i class="fas fa-chevron-down"></i>
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a href="../participate/registration.html">Registration</a></li>
                         <li><a href="../participate/venue.html">Venue</a></li>
@@ -57,9 +81,11 @@
                     </ul>
                 </li>
                 <li><a href="../sponsors.html">Sponsors</a></li>
+                <!-- <li><a href="#">Workshops</a></li> -->
                 <li><a href="../organization.html">Organization</a></li>
                 <li><a href="../editions.html">Editions</a></li>
             </ul>
+
             <button class="mobile-menu" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -140,38 +166,61 @@
         </div>
     </main>
  
+     <button class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===== CONTACT SECTION ===== -->
     <section class="contact-section">
         <div class="contact-inner">
+
+            <!-- Row 1: Email -->
             <div class="contact-row">
-                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
                 <div class="contact-text">
                     <h2>Contact Us</h2>
                     <p>For any queries regarding ICDCN 2027, feel free to reach out to us.</p>
                 </div>
                 <a href="mailto:icdcn2027@nitk.edu.in" class="contact-email">
-                    <i class="fas fa-paper-plane"></i> icdcn2027[at]nitk[dot]edu[dot]in
+                    <i class="fas fa-paper-plane"></i>
+                    icdcn2027[at]nitk[dot]edu[dot]in
                 </a>
             </div>
+
+            <!-- Divider -->
             <div class="contact-divider"></div>
+
+            <!-- Row 2: Social -->
             <div class="contact-row">
-                <div class="contact-icon"><i class="fas fa-share-alt"></i></div>
+                <div class="contact-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
                 <div class="contact-text">
                     <h2>Follow Us</h2>
                     <p>Stay updated with the latest news and announcements.</p>
                 </div>
                 <div class="contact-social">
-                    <a href="https://www.facebook.com/ICDCN" target="_blank" rel="noopener" class="contact-social-btn"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-                    <a href="https://www.linkedin.com/company/icdcn" target="_blank" rel="noopener" class="contact-social-btn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                    <a href="https://www.facebook.com/ICDCN" target="_blank" rel="noopener" aria-label="Facebook" class="contact-social-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/icdcn" target="_blank" rel="noopener" aria-label="LinkedIn" class="contact-social-btn">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
+
         </div>
     </section>
- 
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <div class="footer-content"><p>&copy; 2027 ISDCN. All rights reserved.</p></div>
+        <div class="footer-content">
+            <p>&copy; 2027 ISDCN. All rights reserved.</p>
+        </div>
     </footer>
- 
-    <button class="scroll-top-btn" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
  
     <script src="../js/script.js"></script>
     <script>
