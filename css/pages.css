@@ -5471,6 +5471,8 @@ code {
 .ap-track-icon.net      { background: linear-gradient(135deg, #065f46, #059669); }
 .ap-track-icon.dc-short { background: linear-gradient(135deg, #4338ca, #818cf8); }
 .ap-track-icon.net-short{ background: linear-gradient(135deg, #92400e, #d97706); }
+.ap-track-icon.poster   { background: linear-gradient(135deg, #be185d, #ec4899); }
+.ap-track-icon.doctoral { background: linear-gradient(135deg, #6d28d9, #a78bfa); }
 
 .ap-track-header h2 {
     font-size: 1.05rem;
