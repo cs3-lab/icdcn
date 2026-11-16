@@ -806,6 +806,29 @@ header.scrolled   .mobile-menu { color: #1e293b; }
     font-size: 0.9rem;
 }
 
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-bottom: 1rem;
+}
+
+.sponsor-logos img {
+    max-width: 88px;
+    max-height: 60px;
+    margin: 0;   /* cancels the auto margins from .sponsor-tier img */
+}
+
+.sponsors-grid { grid-template-columns: repeat(3, 1fr); }  /* was repeat(5, 1fr) */
+.sponsor-tier.wide { grid-column: span 2; }
+.sponsor-tier.wide .sponsor-logos img { max-width: 140px; max-height: 80px; }
+
+@media (max-width: 600px) {
+    .sponsor-tier.wide { grid-column: auto; }
+}
+
 /* ===== GALLERY ===== */
 .gallery-section {
     padding: 5rem 2.5rem;
