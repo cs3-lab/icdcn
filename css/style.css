@@ -642,6 +642,22 @@ header.scrolled   .mobile-menu { color: #1e293b; }
 .dates-panel { display: none; }
 .dates-panel.active { display: block; }
 
+/* ===== IMPORTANT DATES: PASSED ITEMS ===== */
+.timeline-item.past .dot { background: rgba(255, 255, 255, 0.35); }
+
+.timeline-item.past > div:last-child { opacity: 0.55; }
+
+.timeline-item.past .date,
+.timeline-item.past h4 {
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+/* extended items: the old date is already struck, avoid a double line */
+.timeline-item.past .date s { text-decoration: none; }
+.timeline-item.past .date-new { color: rgba(255, 255, 255, 0.6); }
+
 @media (max-width: 480px) {
     .dates-tab-track {
         display: grid;

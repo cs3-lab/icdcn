@@ -175,6 +175,29 @@
         tabTrack.addEventListener('scroll', updateArrows, { passive: true });
         updateArrows(); // run once on load to set initial state
     }
+    // ===== AUTO-STRIKE PASSED DATES =====
+(function () {
+    const MONTHS = ['january','february','march','april','may','june','july',
+                    'august','september','october','november','december'];
+
+    // A deadline ends at the end of its (last) day in AoE (UTC-12),
+    // which is 12:00 UTC on the following day.
+    function deadline(text) {
+        const m = text.match(/([A-Za-z]+)\s+(\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?,\s*(\d{4})/);
+        if (!m) return null;
+        const mon = MONTHS.indexOf(m[1].toLowerCase());
+        if (mon < 0) return null;
+        const day = parseInt(m[3] || m[2], 10);   // last day of a range like "January 4-7"
+        return Date.UTC(parseInt(m[4], 10), mon, day + 1, 12, 0, 0);
+    }
+
+    document.querySelectorAll('.dates-panel .timeline-item').forEach(item => {
+        const dates = item.querySelectorAll('.date');
+        const current = dates[dates.length - 1];   // the new date, if the deadline was extended
+        const t = current && deadline(current.textContent);
+        if (t && Date.now() > t) item.classList.add('past');
+    });
+})();
 // ===== KEYNOTE PHOTO LOAD DETECTION =====
 document.querySelectorAll('.keynote-card-photo img').forEach(img => {
     if (img.complete && img.naturalWidth > 0) {
